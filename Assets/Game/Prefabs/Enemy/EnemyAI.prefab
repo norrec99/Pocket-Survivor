@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1423866225458401857}
   m_Layer: 6
   m_Name: EnemyAI
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,8 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95a51ad51287aa747a39cc9d2cb41aa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 5
-  _rotationSpeed: 10
+  moveSpeed: 5
+  rotationSpeed: 10
+  hp: 100
 --- !u!136 &191296003487896808
 CapsuleCollider:
   m_ObjectHideFlags: 0

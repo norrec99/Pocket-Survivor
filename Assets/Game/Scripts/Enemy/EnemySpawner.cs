@@ -13,7 +13,8 @@ public class EnemySpawner : MonoBehaviour
     private void Start()
     {
         player = PlayerController.Instance.transform;
-        InvokeRepeating(nameof(SpawnEnemy), 1f, spawnInterval);
+        // InvokeRepeating(nameof(SpawnEnemy), 1f, spawnInterval);
+        SpawnEnemy(); // Initial spawn
     }
 
     void SpawnEnemy()
