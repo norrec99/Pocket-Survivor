@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6752589280316605299}
   - component: {fileID: 5175393975709751798}
   - component: {fileID: 7753714638853346873}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,8 @@ GameObject:
   - component: {fileID: 2205471464622449262}
   - component: {fileID: 1147858990087154579}
   - component: {fileID: 4141186351493280216}
-  m_Layer: 0
+  - component: {fileID: 8466842800691486009}
+  m_Layer: 7
   m_Name: PlayerController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,8 +184,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _variableJoystick: {fileID: 0}
-  rb: {fileID: 4141186351493280216}
-  col: {fileID: 1147858990087154579}
+  _rigidbody: {fileID: 4141186351493280216}
+  _collider: {fileID: 1147858990087154579}
+  _findTargetSystem: {fileID: 8466842800691486009}
   _joystickCanvas: {fileID: 0}
   _moveSpeed: 10
   _rotationSpeed: 720
@@ -238,3 +240,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &8466842800691486009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857421094483800826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdebd112f0ab8ab4fbff51fdca1bcd68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetingRange: 6
+  _enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64

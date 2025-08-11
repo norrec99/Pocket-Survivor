@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4821648748386683064}
   - component: {fileID: 191296003487896808}
   - component: {fileID: 1423866225458401857}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyAI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 3434017363519555319}
   - component: {fileID: 8357948655232052476}
   - component: {fileID: 7596653897776325468}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
